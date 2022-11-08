@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./template/favicon.png" rel="icon" />
+<title>The Smile Bubbles - NFT Minting and Collection</title>
+<meta name="description" content="The Smile Bubbles Art studio 10,000 unique collectible characters with proof of ownership stored on the Ethereum blockchain. Working for you and earning you money..">
+<meta name="author" content="">
+<!-- Web Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="./template/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="./template/all.min.css" />
+<!-- Owl Carousel -->
+<link rel="stylesheet" type="text/css" href="./template/owl.carousel.min.css" />
+<!-- Template Stylesheet -->
+<link rel="stylesheet" type="text/css" href="./template/stylesheet.css" />
+<!-- Colors Css -->
+<link id="color-switcher" type="text/css" rel="stylesheet" href="#" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header-nav" data-bs-smooth-scroll="true" data-bs-offset="0" class="hero-bg" style="background-image:url('./template/bg.jpg');">
+
+<!-- Preloader -->
+<div class="preloader preloader-dark">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top-slide"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg navbar-dark bg-transparent fw-500">
+      <div class="container position-relative">
+        <div class="col-auto col-lg-auto"> 
+          <!-- Logo --> 
+          <a class="logo" href="index.html" title="The Smile Bubbles"> <img style="width: 200px;" src="./template/logo.png" alt="The Smile Bubbles"/> </a> 
+          <!-- Logo End --> 
+        </div>
+        <div class="col col-lg-10 navbar-accordion">
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav"><span></span><span></span><span></span></button>
+          <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+              <li class="nav-item"><a class="nav-link" href="#collections">Collections</a></li>
+              <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+              <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+              <!--<li class="nav-item"><a class="nav-link" href="mint.html">MINT NOW </a></li>-->
+               <li class="align-items-center h-auto mt-2 mt-lg-0 ms-lg-3"><a class="btn btn-light rounded-pill d-inline-block" href="https://discord.gg/N7UKGwauca"><span class="me-1"><i class="fab fa-discord"></i></span> Discord</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Connect Wallet - Offcanvas menu
+====================================== -->
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <h4 class="text-white fw-600 text-center mb-4" id="offcanvasLabel"><span class="me-1"><i
+            class="fas fa-wallet"></i></span> Connect Wallet</h4>
+      <div class="text-white-50 text-center mb-4">Choose how you want to connect. There are several wallet providers.
+      </div>
+      <div class="list-group connect-wallet"> <a href="#"  onclick="connect();" class="list-group-item list-group-item-action"
+          aria-current="true"> <img  class="img-fluid d-flex me-2" src="./template/metamask.png" alt=""> MetaMask <span
+            class="badge bg-info ms-auto">Popular</span> </a> <a href="#" class="list-group-item list-group-item-action"
+          aria-current="true"> <img class="img-fluid d-flex me-2" src="./template/wallet-connect.png" alt=""> Wallet
+          Connect </a> <a href="#" class="list-group-item list-group-item-action" aria-current="true"> <img
+            class="img-fluid d-flex me-2" src="./template/coinbase.png" alt=""> Coinbase </a> <a href="#"
+          class="list-group-item list-group-item-action" aria-current="true"> <img class="img-fluid d-flex me-2"
+            src="./template/fortmatic.png" alt=""> Fortmatic </a> <a href="#"
+          class="list-group-item list-group-item-action" aria-current="true"> <img class="img-fluid d-flex me-2"
+            src="./template/myetherwallet.png" alt=""> MyEtherWallet</a> </div>
+    </div>
+  </div>
+  <!-- Connect Wallet - Offcanvas menu End --> 
+  
+  <!-- Content
+  ======================== -->
+  <div id="content" role="main"> 
+    
+    <!-- Intro
+    ========================= -->
+    <section id="home">
+      <div class="hero-wrap">
+        <div class="hero-content section pb-0 d-flex min-vh-100">
+          <div class="container py-5 my-auto">
+            <div class="row gy-5 g-lg-4">
+              <div class="col-md-6 my-auto text-center text-md-start pt-5 pt-md-0 order-2 order-md-1">
+                <h1 class="text-17 fw-600 text-white">The Smile Bubbles<br class="d-none d-md-block">
+                  NFT Collection</h1>
+                <p class="text-4 text-light mb-4">The Smile Bubbles Art studio 10,000 unique collectible characters with proof of ownership stored on the Ethereum blockchain. Working for you and earning you money.</p>
+                <!--<a href="mint.html" class="btn btn-primary rounded-pill">Mint Now <span class="text-2 ms-2"><i class="fa fa-chevron-right"></i></span></a> --></div>
+              <div class="col-md-6 pb-5 pb-md-0 order-1 order-md-2"> 
+                <!-- Parallax Mouse Move -->
+                <div id="scene" data-relative-input="true" class="scene">
+                  <div data-depth="0.6" class="ms-5 mt-md-n5"><img class="img-fluid rounded-4 shadow-lg" src="./template/item-3.jpg" alt=""></div>
+                  <div data-depth="0.3" class="top-50 start-0 ms-n3 mt-md-5"><img class="img-fluid rounded-4 shadow-lg" src="./template/item-1.jpg" alt=""></div>
+                  <div data-depth="0.4" class="top-50 start-50 mt-n4"><img class="img-fluid rounded-4 shadow-lg" src="./template/item-2.jpg" alt=""></div>
+                </div>
+                <!-- Parallax Mouse Move End --> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Intro end --> 
+    
+    <!-- Number -->
+    <div class="mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <div class="hero-wrap py-3">
+              <div class="hero-mask rounded-4 opacity-7 bg-dark"></div>
+              <div class="hero-content text-center py-4 px-3">
+                <h4 class="text-11 text-white fw-600 mb-0">10000</h4>
+                <div class="text-4 text-light">Total Items</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="hero-wrap py-3">
+              <div class="hero-mask rounded-4 opacity-7 bg-dark"></div>
+              <div class="hero-content text-center py-4 px-3">
+                <h4 class="text-11 text-white fw-600 mb-0">1 Hour</h4>
+                <div class="text-4 text-light">Pre Salse</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="hero-wrap py-3">
+              <div class="hero-mask rounded-4 opacity-7 bg-dark"></div>
+              <div class="hero-content text-center py-4 px-3">
+                <h4 class="text-11 text-white fw-600 mb-0">0.003</h4>
+                <div class="text-4 text-light">Pre Sale Price (ETH)</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="hero-wrap py-3">
+              <div class="hero-mask rounded-4 opacity-7 bg-dark"></div>
+              <div class="hero-content text-center py-4 px-3">
+                <h4 class="text-11 text-white fw-600 mb-0">0.006</h4>
+                <div class="text-4 text-light">Public Sale Price</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Number end --> 
+    
+    <!-- About
+    ========================== -->
+    <section id="about" class="section">
+      <div class="container"> 
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center mb-5">
+          <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">About Us</h2>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Our Mission<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+        </div>
+        <!-- Heading end-->
+        
+        <div class="row">
+          <div class="col-lg-6 position-relative">
+            <div class="about-img">
+              <div class="img-1"><img class="img-fluid rounded-4 shadow-lg" src="./template/item-4.jpg" alt=""></div>
+              <div class="img-2"><img class="img-fluid rounded-4 shadow-lg" src="./template/item-5.jpg" alt=""></div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center text-lg-start">
+            <h2 class="text-12 text-white fw-600 mb-3">Welcome to The Smile Bubbles Art Studio.</h2>
+            <p class="text-5 text-white">The Smile Bubbles Art studio is a private collection of NFTs unique digital collectibles. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p class="text-light">Owning a Smile Bubbles is comparable to owning stocks in a company. 
+              Your digital NFT gives you the rights and symbolizes your own share in our unique project.
+                  Your NFT's value will be used as an investment to bring our courageous and viable ideas to life! 
+                  We are planning on launching multiple services for our investors to feast on. 
+                  Want to get to know more in-depth about our ideas? <a href="https://death-skulls-whitepaper.gitbook.io/earn-whit-the-death-skull/" title="Whitepaper Smile Bubbles">Read here</a></p>
+            <a class="btn btn-primary rounded-pill mt-2" href="#join">Join Our Discord <span class="text-2 ms-2"><i class="fa fa-chevron-right"></i></span></a> </div>
+        </div>
+      </div>
+    </section>
+    <!-- About end --> 
+    
+    <!-- Roadmap
+    =========================== -->
+    <section id="roadmap" class="section">
+      <div class="container"> 
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center mb-5">
+          <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Timeline</h2>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Roadmap<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+        </div>
+        <!-- Heading end-->
+        
+        <div class="roadmap text-white"> 
+          <!-- 1st -->
+          <div class="row gy-3 mb-5">
+            <div class="col-md-6">
+              <div class="step-pr shadow mx-auto ms-md-auto me-md-5">
+                <div class="text-14 fw-600 text-primary me-n2">0<sup class="text-8 fw-300">%</sup></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="text-center text-md-start ms-md-5">
+                <p class="text-4 fw-500 d-inline-flex align-items-center mb-2">Q4 - 2022 <span class="badge bg-warning text-dark fw-400 rounded-pill px-3 me-2">In Progress</span></p>
+                <h2 class="text-white fw-600 mb-3">Phase I: Minting & Rewards</h2>
+                <p class="text-light">Smile Bubbles is projected to go live around Q4 2022, the mint will consist of a Presale phase and a Public minting phase! Our NFT's also have a specific rarity. Meaning that the more rare your NFT is, the more value it will hold!</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 2nd -->
+          <div class="row gy-4 mb-5">
+            <div class="col-md-6 order-1 order-md-2">
+              <div class="step-pr alternate shadow mx-auto me-md-auto ms-md-5">
+                <div class="text-14 fw-600 text-primary me-n2">20<sup class="text-8 fw-300">%</sup></div>
+              </div>
+            </div>
+            <div class="col-md-6 order-2 order-md-1">
+              <div class="text-center text-md-end me-md-5">
+                <p class="text-4 fw-500 d-inline-flex align-items-center mb-2"><span class="badge bg-warning text-dark fw-400 rounded-pill px-3 me-2">In Progress</span> Q1 - 2023</p>
+                <h2 class="text-white fw-600 mb-3">Phase II: Community</h2>
+                <p class="text-light">We will be striving and working hard to building a completely open and transparent community where all holders have the right to vote on certain subjects and suggestions on our further projects and development proposals. All genesis holders will also be receiving timely airdrops. By holding Smile Bubblesyou will make money passively and have the eligibility to participate in our communities' giveaways and lotteries.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 3rd -->
+          <div class="row gy-4 mb-5">
+            <div class="col-md-6">
+              <div class="step-pr shadow mx-auto ms-md-auto me-md-5">
+                <div class="text-14 fw-600 text-primary me-n2">40<sup class="text-8 fw-300">%</sup></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="text-center text-md-start ms-md-5">
+                <p class="text-4 fw-500 d-inline-flex align-items-center mb-2">Q3 - 2023 <span class="badge bg-warning text-dark fw-400 rounded-pill px-3 me-2">In Progress</span></p>
+                <h2 class="text-white fw-600 mb-3">Phase III: Smile Bubbles DAO</h2>
+                <p class="text-light">Set up our own DAO and start making timely and strategical investments for low-risk and long term rewards and profits by our speculations and expertise analysts.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 4th -->
+          <div class="row gy-4 mb-5">
+            <div class="col-md-6 order-1 order-md-2">
+              <div class="step-pr alternate shadow mx-auto me-md-auto ms-md-5">
+                <div class="text-14 fw-600 text-primary me-n2">60<sup class="text-8 fw-300">%</sup></div>
+              </div>
+            </div>
+            <div class="col-md-6 order-2 order-md-1">
+              <div class="text-center text-md-end me-md-5">
+                <p class="text-4 fw-500 d-inline-flex align-items-center mb-2"><span class="badge bg-warning text-dark fw-400 rounded-pill px-3 me-2">In Progress</span> Q4 - 2023</p>
+                <h2 class="text-white fw-600 mb-3">Phase IV: Project Kick-off</h2>
+                <p class="text-light">All the profits and funds raised from DAO and the sale of our NFT's will directly be re-invested into our own projects, such as our own Bridge/Decentralized Exchange. Want to read more about the ideas we have? Check out the whitepaper here!</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 5th -->
+          <div class="row gy-4 mb-5">
+            <div class="col-md-6">
+              <div class="step-pr shadow mx-auto ms-md-auto me-md-5">
+                <div class="text-14 fw-600 text-primary me-n2">80<sup class="text-8 fw-300">%</sup></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="text-center text-md-start ms-md-5">
+                <p class="text-4 fw-500 d-inline-flex align-items-center mb-2">Q5 - 2023 <span class="badge bg-warning text-dark fw-400 rounded-pill px-3 ms-2">In Progress</span></p>
+                <h2 class="text-white fw-600 mb-3">Phase V: DeathSkull token $TDS</h2>
+                <p class="text-light">After the launch of our own bridge/DEX, we will start introducing our own token which ofcourse will be airdropped to genesis wallets. The main function of our token will be to accelerate the speed of transactions on our multiple-network bridge exchange. So instead of waiting for your transaction on a specific network to be confirmed, you can exchange $KWDS!</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 6th -->
+          <div class="row gy-4">
+            <div class="col-md-6 order-1 order-md-2">
+              <div class="step-pr alternate shadow mx-auto me-md-auto ms-md-5">
+                <div class="text-14 fw-600 text-primary me-n2">100<sup class="text-8 fw-300">%</sup></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Roadmap end --> 
+    
+    <!-- Collections
+    ============================= -->
+    <section id="collections" class="section">
+      <div class="container"> 
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center mb-5">
+          <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Showcase</h2>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Our Collections<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+        </div>
+        <!-- Heading end--> 
+      </div>
+      
+      <!-- Carousel -->
+      <div class="owl-carousel owl-theme" data-loop="true" data-dots="false" data-nav="false" data-autoplay="true" data-autoplaytimeout="3000" data-smartspeed="3000" data-slidetransition="linear" data-center="true" data-margin="25" data-stagepadding="0" data-slideby="1" data-items-xs="3" data-items-sm="4" data-items-md="4" data-items-lg="5">
+        <div class="item"> <img class="img-fluid rounded-4" src="./template/item-1.jpg" alt=""> </div>
+        <div class="item"> <img class="img-fluid rounded-4" src="./template/item-5.jpg" alt=""> </div>
+        <div class="item"> <img class="img-fluid rounded-4" src="./template/item-3.jpg" alt=""> </div>
+        <div class="item"> <img class="img-fluid rounded-4" src="./template/item-6.jpg" alt=""> </div>
+        <div class="item"> <img class="img-fluid rounded-4" src="./template/item-4.jpg" alt=""> </div>
+        <div class="item"> <img class="img-fluid rounded-4" src="./template/item-2.jpg" alt=""> </div>
+      </div>
+      <!-- Carousel End --> 
+      
+      <!-- Carousel Reverse -->
+      <div class="owl-carousel owl-theme" data-rtl="true" data-loop="true" data-dots="false" data-nav="false" data-autoplay="true" data-autoplaytimeout="3000" data-smartspeed="3000" data-slidetransition="linear" data-center="true" data-margin="25" data-stagepadding="0" data-slideby="1" data-items-xs="3" data-items-sm="4" data-items-md="4" data-items-lg="5">
+        <div class="item"> <img class="img-fluid rounded-4" src="./template/item-7.jpg" alt=""> </div>
+        <div class="item"> <img class="img-fluid rounded-4" src="./template/item-8.jpg" alt=""> </div>
+        <div class="item"> <img class="img-fluid rounded-4" src="./template/item-9.jpg" alt=""> </div>
+        <div class="item"> <img class="img-fluid rounded-4" src="./template/item-10.jpg" alt=""> </div>
+        <div class="item"> <img class="img-fluid rounded-4" src="./template/item-11.jpg" alt=""> </div>
+      </div>
+      <!-- Carousel Reverse End --> 
+      
+      <!-- Button -->
+      <div class="container text-center mt-5"> <a class="btn btn-primary rounded-pill mt-2" href="collections.html">View Collections <span class="text-2 ms-2"><i class="fa fa-chevron-right"></i></span></a> </div>
+      <!-- Button End--> 
+    </section>
+    <!-- Collections end --> 
+    
+    <!-- Team
+    ============================ -->
+    <section id="team" class="section">
+      <div class="container"> 
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center mb-5">
+          <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Leadership</h2>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Meet Our Team<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+        </div>
+        <!-- Heading end-->
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <div class="team bg-dark rounded-4 d-inline-block text-center"> <img class="img-fluid rounded-4" alt="" src="./template/leader.jpg">
+              <h3 class="text-white">Skull James</h3>
+              <p class="text-white-50">CEO &amp; Founder</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="team bg-dark rounded-4 d-inline-block text-center"> <img class="img-fluid rounded-4" alt="" src="./template/leader-2.jpg">
+              <h3 class="text-white">Skull Jeff </h3>
+              <p class="text-white-50">Co-Founder</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="team bg-dark rounded-4 d-inline-block text-center"> <img class="img-fluid rounded-4" alt="" src="./template/leader-3.jpg">
+              <h3 class="text-white">Skull Jefrey</h3>
+              <p class="text-white-50">Chief Marketing Officer</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="team bg-dark rounded-4 d-inline-block text-center"> <img class="img-fluid rounded-4" alt="" src="./template/leader-4.jpg">
+              <h3 class="text-white">Skull Simone</h3>
+              <p class="text-white-50">Developer</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="team bg-dark rounded-4 d-inline-block text-center"> <img class="img-fluid rounded-4" alt="" src="./template/leader-5.jpg">
+              <h3 class="text-white">Skull Smith</h3>
+              <p class="text-white-50">Designer</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="team bg-dark rounded-4 d-inline-block text-center"> <img class="img-fluid rounded-4" alt="" src="./template/leader-6.jpg">
+              <h3 class="text-white">Skull Paul</h3>
+              <p class="text-white-50">Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team end --> 
+    
+    <!-- FAQ
+    ============================ -->
+    <section id="faq" class="section">
+      <div class="container"> 
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center mb-5">
+          <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">Questions</h2>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Frequently Asked Questions<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+        </div>
+        <!-- Heading end-->
+        <div class="row gy-5">
+          <div class="col-lg-6 order-1 order-lg-0"> 
+            <!-- Accordion Start -->
+            <div class="accordion accordion-flush accordion-dark" id="faqTopics">
+      
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">WHY SHOULD I BUY INTO THIS PROJECT?</button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#faqTopics">
+                  <div class="accordion-body">
+                    <p>It's ran by a super fanatic team of geeks with interest in bringing cool stuff in the world that is actually necessary,
+                       we aren't looking for a quick way of making money but rather to create a huge community and run our projects with the community. 
+                      </p><p class="mb-0">Thus making it a safe investment and a long-term income generator for investors.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">HOW CAN THIS PROFIT ME IN ANY WAY?</button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#faqTopics">
+                  <div class="accordion-body">
+                    <p class="mb-0">By buying into this NFT you essentially become a small shareholder in our projects, these range from Decentralized Exchanges (DEX) to Launch-platforms all made by us respectively.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">IS IT WORTH GETTING A WHITELIST SPOT?</button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#faqTopics">
+                  <div class="accordion-body">
+                    <p class="mb-0">This depends on yourself, we offer 500 whitelist spots for our NFT minting event, during which 500 spots remain open for anyone to mint. 
+                      Having a whitelist spot guarantees your spot in the project with upmost certainty.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">WHO IS BEHIND THIS PROJECT?</button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#faqTopics">
+                  <div class="accordion-body">
+                    <p class="mb-0">We're a team of developers and artists with various digital skills, with experience in working for succesful NFT projects and lots of experience working in the crypto-space. We thought it's best to bundle our talents and start this amazing project and not only profit ourselves but our community aswell.</p>
+                  </div>
+                </div>
+              </div>
+           
+            </div>
+            <!-- Accordion End --> 
+          </div>
+          <div class="col-lg-6 d-flex align-items-center justify-content-center order-0 order-lg-1"> <img class="img-fluid" src="./template/faq.png" title="FAQ" alt="faq"> </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ end --> 
+    <!-- Join
+    ============================== -->
+    <section id="join" class="section pb-0">
+      <div class="container"> 
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center">
+          <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 lh-1 mb-0 mb-n1">don’t miss</h2>
+        </div>
+        <!-- Heading end-->
+        
+        <div class="bg-primary text-center shadow-lg rounded-4 p-5 mt-n3">
+          <div class="text-15 text-white lh-1 mb-2"><i class="fab fa-discord"></i></div>
+          <h3 class="text-11 text-white fw-600 mb-3">Join Our Community</h3>
+          <a class="btn btn-light rounded-pill" href="https://discord.gg/N7UKGwauca">Join Discord</a> </div>
+      </div>
+    </section>
+    <!-- Join end --> 
+    
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================== -->
+  <footer id="footer" class="section footer-dark my-4">
+    <div class="container"> 
+      <!-- Social Icon -->
+      <ul class="social-icons social-icons-dark social-icons-lg justify-content-center mb-4">
+        <li class="social-icons-discord"><a data-bs-toggle="tooltip" href="http://www.discord.com" target="_blank" title="Discord"><i class="fab fa-discord"></i></a></li>
+      <!--   <li class="social-icons-facebook"><a data-bs-toggle="tooltip" href="http://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>-->
+        <li class="social-icons-twitter"><a data-bs-toggle="tooltip" href="https://twitter.com/DeathSkullnft" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+       <!--  <li class="social-icons-instagram"><a data-bs-toggle="tooltip" href="http://www.dribbble.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>-->
+       <!--  <li class="social-icons-telegram"><a data-bs-toggle="tooltip" href="http://www.telegram.com" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a></li>-->
+      </ul>
+      <!-- Copyright Text -->
+      <p class="text-center mb-4">Copyright © 2022 <a href="#" class="fw-500">The Smile Bubbles</a>. All Rights Reserved.</p>
+      <!-- Other Links -->
+    <!--  <ul class="nav nav-sm justify-content-center">
+        <li class="nav-item"> <a class="nav-link" data-bs-toggle="modal" data-bs-target="#security" href="#">Security</a></li>
+        <li class="nav-item"> <a class="nav-link" data-bs-toggle="modal" data-bs-target="#terms" href="#">Terms</a></li>
+        <li class="nav-item"> <a class="nav-link" data-bs-toggle="modal" data-bs-target="#privacy" href="#">Privacy</a></li>
+      </ul>-->
+    </div>
+  </footer>
+  <!-- Footer end --> 
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back to Top
+============================== --> 
+<a id="back-to-top" data-bs-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+
+<!-- JavaScript --> 
+<script src="./template/jquery.min.js"></script> 
+<script src="./template/bootstrap.bundle.min.js"></script> 
+<!-- Owl Carousel --> 
+<script src="./template/owl.carousel.min.js"></script> 
+<!-- Parallax Mouse Move --> 
+<script src="./template/parallax.min.js"></script> 
+<!-- Style Switcher --> 
+<script src="./template/switcher.min.js"></script> 
+<!-- Custom Script --> 
+<script src="./template/theme.js"></script>
+</body>
+</html>
