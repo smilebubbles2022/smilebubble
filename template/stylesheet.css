@@ -3360,7 +3360,16 @@ label.error {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
 }
-
+.btn {
+  border-color: #fff !important;
+  color: #fff !important;
+}
+.button.primary.btnfree
+{
+  border-color: #fff !important;
+  color: #fff !important;
+  background: red !important;
+}
 .btn:not(.btn-link) {
   -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
